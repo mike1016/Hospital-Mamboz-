@@ -1,0 +1,59 @@
+.container {
+    height: 800px;
+    width: 700px;
+    margin-right: 400px;
+    margin-left: 400px;
+    border: 2px solid indigo;
+    align-items: center;
+    text-align: center;
+
+}
+
+.container form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    font-size: 24px;
+
+
+}
+
+.container form input {
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    margin: 10px auto;
+}
+
+.container form input[type="text"],
+.container form input[type="password"],
+.container form input[type="email"],
+.container form input[type="date"],
+.container form input[type="int"] {
+    width: 400px;
+    height: 21px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.container form input [type="submit"] {
+    background-color: green;
+    color: green;
+}
+
+.container h1 {
+    margin-top: 270px;
+    color: green;
+
+
+}
+
+body {
+    background-image: url(download.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

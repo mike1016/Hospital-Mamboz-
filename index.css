@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('istockphoto-1312706413-1024x1024.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+
+    height: 100vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: green;
+
+
+}
+
+.navbar {
+
+
+    overflow: hidden;
+}
+
+.navbar ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: right;
+
+}
+
+.navbar li a {
+    width: 150px;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ff7846;
+}

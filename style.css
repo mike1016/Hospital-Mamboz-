@@ -1,0 +1,330 @@
+/* body { 
+    background-image: url(HOSPITAL\IMAGE.jpg);
+    padding: 0;
+    margin: 0;
+
+}
+
+.heading {
+    border: solid white;
+    height: 100px;
+    width: 100%;
+    background-image: url(HOSPITAL\ IMAGE.jpg);
+    background-repeat: no-repeat;
+    background-color: lightblue;
+    background-size: cover;
+    text-align: center;
+}
+
+.horizontalbar {
+    width: 80%;
+    height: 450px;
+    position: relative;
+    margin: 100px auto;
+    overflow: hidden;
+
+}
+
+
+.tabs-box {
+    display: flex;
+    border-bottom: 1px solid greenyellow
+}
+
+.tabs-box button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content-right img {
+    width: 350px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    position: absolute;
+    transform: translateX(250%);
+    transition: 0.3s;
+}
+
+.content-left {
+    flex-basis: 50%;
+}
+
+.content-right {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.content-left a {
+    width: 150px;
+    display: block;
+    padding: 8px 5px;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: #ff7846;
+    color: #fff;
+    text-align: center;
+
+}
+
+#content1 {
+    transform: translateX(0px);
+
+}
+
+#btn1 {
+    color: #ff7846;
+}*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-left: 50px;
+    background-color: green;
+    overflow: hidden;
+}
+
+.sub-body {
+    min-height: 100vh;
+    background-color: white;
+    height: 100vh;
+    padding: 15px;
+}
+
+#horizontalbar {
+    background-color: green;
+    margin-bottom: 10px;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    text-align: center;
+}
+
+#horizontalbar a {
+    padding: 20px;
+}
+
+#horizontalbar a:visited {
+    color: white;
+}
+
+#horizontalbar a:hover {
+    color: black;
+}
+
+.image {
+    justify-self: center;
+    width: 100%;
+    height: 15vh;
+    /* Occupies 15% of the viewport height */
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.logo img {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    height: 80px;
+}
+
+header {
+    background-color: white;
+    color: white;
+    padding: 10px 0;
+}
+
+header img {
+    max-width: 100%;
+}
+
+.content {
+    display: flex;
+    height: 65vh;
+    border-top: 2px solid grey;
+    flex-wrap: wrap;
+    /* Allow items to wrap onto multiple lines */
+}
+
+.sidebar {
+    flex: 0 0 200px;
+    background-color: white;
+    padding: 2px;
+    border: 2px dashed gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav p {
+    background-color: green;
+    color: white;
+    padding: 5px;
+    margin-top: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 2px;
+    background-color: green;
+}
+
+.sidebar nav ul li a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.border-top {
+    border-top: 2px solid grey;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    body {
+        overflow: scroll;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    #horizontalbar {
+        flex: auto;
+    }
+
+    main {
+        flex: auto;
+    }
+
+    footer {
+        flex: auto;
+    }
+}
+
+/* Registration Form */
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.error-border {
+    border: 1px solid red;
+}
+
+input,
+label {
+    width: 20%;
+    padding: 0;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+#registrationForm {
+    margin-left: 20px;
+}
+
+form {
+    text-align: justify;
+    width: 80%;
+    padding: 20px;
+    border: 2px solid black;
+    height: 35vh;
+}
+
+.form-buttons {
+    position: relative;
+}
+
+/* Records Table */
+table {
+    width: 90%;
+    border-collapse: collapse;
+    color: black;
+    border: 2px solid black;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+th {
+    background-color: #4483b9;
+}
+
+tr:nth-child(even) {
+    background-color: #4483b9;
+    /* Light blue for odd rows */
+}
+
+form {
+    text-align: left;
+    color: #121212;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    text-align: center;
+    padding: 1px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}

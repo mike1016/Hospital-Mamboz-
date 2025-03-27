@@ -1,0 +1,64 @@
+.reg {
+
+
+
+    border: 2px solid violet;
+
+    height: 800px;
+    width: 700px;
+    margin-left: 400px;
+    margin-right: 400px;
+    align-items: center;
+
+    size: 25px;
+    text-align: center;
+
+
+}
+
+.reg label {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 25px;
+    margin: 3px auto;
+
+}
+
+.reg input {
+    align-content: center;
+    justify-content: center;
+
+
+
+}
+
+.reg form input[type="text"],
+
+.reg form input[type="email"],
+.reg form input[type="date"],
+.reg form input[type="int"],
+.reg form input[type="password"],
+.reg form input[type="submit"] {
+    width: 250px;
+    height: 21px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#nation {
+    margin-top: 20px;
+}
+
+
+body {
+    background-image: url(reg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#usertype {
+    height: 21px;
+    width: 250px;
+}
